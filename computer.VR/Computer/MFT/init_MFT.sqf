@@ -30,7 +30,7 @@ _computer = _this select 0;
 _mft = [ ["", "C", [] , ["rwx-rwn-rnn", "root", "users"], "" ] ];
 _working_folders = [ ["",0] ];
 _spareMFT = [];
-_defaultRights = ["rwx-rwx-rnn"];
+_defaultRights = ["rwx-rwx-nnn"];
 
 _computer setVariable [ "Computer_MFT", _mft , false ];
 _computer setVariable [ "Computer_WorkingFolder", _working_folders, true ];

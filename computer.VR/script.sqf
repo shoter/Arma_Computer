@@ -1,4 +1,4 @@
-player globalChat format ["wynik = %1", call compile preprocessFile "test.sqf" ];
+//player globalChat format ["wynik = %1", call compile preprocessFile "test.sqf" ];
 
 _mft = computer getVariable "Computer_MFT";
 
@@ -6,8 +6,8 @@ _mft = computer getVariable "Computer_MFT";
 
 [computer, "root", "root"] call Computer_USR_login;
 
-[computer, "home", "F", []] call Computer_MFT_Create;
-[computer, "folder", "F", [], "\home\"] call Computer_MFT_Create;
+//[computer, "home", "F", []] call Computer_MFT_Create;
+//_debug = [computer, "abc", "C", [], "\shoter\"] call Computer_MFT_Create;
 //[computer, ["folder"] ] call Computer_MFT_ChangeWorkingFolder;
 
 //_debug = [computer, "user", 1, "r"] call Computer_RIGHTS_CheckRightsRecord;

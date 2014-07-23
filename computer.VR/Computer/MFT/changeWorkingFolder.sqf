@@ -9,12 +9,14 @@
 		1: Computer (Object)
 		2: array of strings that indicates folder changes
 	Returns:
-	nil
+	Error on error
 */
+#define RETURN _result
 private [ "_computer", "_changes", "_break", "_data", "_dataMFT", "_dataName", "_dataType", "_mftRecord", "_searchName", "_workingFolders" ];
 _computer = _this select 0;
 _changes = _this select 1;
 _break = false;
+_result = Computer_Success;
 _workingFolders = _computer getVariable "Computer_WorkingFolder";
 {
 	_break = true;
@@ -47,5 +49,6 @@ _workingFolders = _computer getVariable "Computer_WorkingFolder";
 			};
 		} forEach _data;
 	};
-	if(_break) exitWith { true }
+	if(_break) exitWith { _result = Computer_Error_WrongPath;true }
 } forEach _changes;
+RETURN

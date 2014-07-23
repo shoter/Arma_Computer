@@ -7,7 +7,7 @@
 	Parameter(s):
 		1: OBJECT - Computer 
 	Returns:
-	Working folder
+	Working folder [ name, index ]
 */
 private [ "_computer", "_folders" ];
 _computer = _this select 0;

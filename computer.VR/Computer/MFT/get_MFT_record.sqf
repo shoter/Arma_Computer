@@ -6,7 +6,7 @@
 
 	Parameter(s):
 		1: OBJECT - Computer 
-		2: INTEGER - MFT index
+		2: INTEGER - MFT index 
 	Returns:
 	MFT_RECORD, -1 on error
 */

@@ -11,13 +11,14 @@
 	Returns:
 	Index of newly created record ,  if failure happened it's returning -1
 */
-#define RETURN_ERROR -1
+#define RETURN_ERROR _result
 #define RETURN_INDEX(index) index
 
 private [ "_computer", "_mft", "_spare", "_record" ];
 
 _record = _this select 1;
-if( ([_record] call Computer_MFT_CheckRecord)) then 
+_result =([_record] call Computer_MFT_CheckRecord);
+if( _result isEqualTo Computer_Success  ) then 
 {
 	_computer = _this select 0;
 	_spare = _computer getVariable "Computer_spareMFT";

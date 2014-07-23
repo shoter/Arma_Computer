@@ -11,3 +11,4 @@ Computer_MFT_WorkingFolderLine = compile preprocessFile "Computer\MFT\workingFol
 Computer_MFT_Get = compile preprocessFile "Computer\MFT\get_MFT_record.sqf";
 Computer_MFT_GetFileType = compile preprocessFile "Computer\MFT\getFileType.sqf";
 Computer_MFT_PathToArray = compile preprocessFile "Computer\MFT\PathLineToArray.sqf";
+Computer_MFT_GetFile = compile preprocessFile "Computer\MFT\getFile.sqf";
