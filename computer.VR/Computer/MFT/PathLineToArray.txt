@@ -1,0 +1,12 @@
+/* Computer_MFT_WorkingFolderLine
+	Author: Shoter
+
+	Description:
+	Create current workfolder line
+	
+	Parameter(s):
+		1: OBJECT - Computer 
+		
+	Returns:
+	Workfolder line
+*/

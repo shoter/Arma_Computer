@@ -1,0 +1,2 @@
+#define RETURN_TRUE; true
+RETURN_TRUE;
